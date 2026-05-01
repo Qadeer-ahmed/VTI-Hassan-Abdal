@@ -168,10 +168,9 @@ export default function App() {
 }
 
 // Section Components
-function Home({ onApply, key }: { onApply: () => void, key?: string }) {
+function Home({ onApply }: { onApply: () => void }) {
   return (
     <motion.div
-      key={key}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -277,10 +276,9 @@ function Home({ onApply, key }: { onApply: () => void, key?: string }) {
   );
 }
 
-function About({ key }: { key?: string }) {
+function About() {
   return (
     <motion.div
-      key={key}
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
@@ -326,10 +324,9 @@ function About({ key }: { key?: string }) {
   );
 }
 
-function Courses({ key }: { key?: string }) {
+function Courses() {
   return (
     <motion.div
-      key={key}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -401,10 +398,9 @@ function Courses({ key }: { key?: string }) {
   );
 }
 
-function Fees({ key }: { key?: string }) {
+function Fees() {
   return (
     <motion.div
-      key={key}
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
       exit={{ opacity: 0, scale: 0.95 }}
@@ -446,10 +442,9 @@ function Fees({ key }: { key?: string }) {
   );
 }
 
-function Contact({ key }: { key?: string }) {
+function Contact() {
   return (
     <motion.div
-      key={key}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -501,7 +496,7 @@ function Contact({ key }: { key?: string }) {
   );
 }
 
-function Admission({ key }: { key?: string }) {
+function Admission() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
